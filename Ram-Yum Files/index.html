@@ -65,7 +65,12 @@
     </div>
   </header><!-- End Header -->
 
+
+
+
   <!-- ======= Hero Section ======= -->
+  
+
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
@@ -185,53 +190,21 @@
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
       <div class="container" data-aos="fade-up">
-
         <div class="section-header">
           <h2>Our Menu</h2>
           <p>Check Our <span>Yummy Menu</span></p>
         </div>
 
-        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
-              <h4>Starters</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
-              <h4>Breakfast</h4>
-            </a><!-- End tab nav item -->
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
-              <h4>Lunch</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
-              <h4>Dinner</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-
           <div class="tab-pane fade active show" id="menu-starters">
-
             <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Starters</h3>
-            </div>
+              <h3>Appetizers</h3>
+            </div><!-- Menu Item -->
 
             <div class="row gy-5">
-
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <h4><input type="checkbox" id="porkfriedrice" name="porkfriedrice" unchecked>Pork Fried Rice</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -242,7 +215,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <h4><input type="checkbox" id="veggiefriedrice" name="veggiefriedrice" unchecked>Veggie Fried Rice</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -250,10 +223,10 @@
                   $14.95
                 </p>
               </div><!-- Menu Item -->
-
+            
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <h4><input type="checkbox" id="gyoza" name="gyoza" unchecked>Gyoza</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -264,7 +237,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="dumplings" name="dumplings" unchecked>Dumplings</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -275,7 +248,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="slicedchashu" name="slicedchashu" unchecked>Sliced Chashu</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -286,7 +259,18 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <h4><input type="checkbox" id="sideegg" name="sideegg" unchecked>Side Egg</h4>
+                <p class="ingredients">
+                  Lorem, deren, trataro, filede, nerada
+                </p>
+                <p class="price">
+                  $9.95
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                <h4><input type="checkbox" id="sidenoodles" name="sidenoodles" unchecked>Side Noodles</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -296,20 +280,15 @@
               </div><!-- Menu Item -->
 
             </div>
-          </div><!-- End Starter Menu Content -->
-
-          <div class="tab-pane fade" id="menu-breakfast">
+          </div><!-- End Appetizer Menu Content -->
 
             <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Breakfast</h3>
-            </div>
-
+              <h3>Ramen</h3>
+            </div><!-- Menu Item -->
             <div class="row gy-5">
-
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <h4><input type="checkbox" id="classicramen" name="classicramen" unchecked>Classic Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -320,7 +299,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <h4><input type="checkbox" id="spicyclassicramen" name="spicyclassicramen" unchecked>Spicy Classic Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -331,7 +310,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <h4><input type="checkbox" id="shoyuramen" name="shoyuramen" unchecked>Shoyu Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -342,7 +321,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="spicyshoyuramen" name="spicyshoyuramen" unchecked>Spicy Shoyu Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -353,7 +332,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="veggieramen" name="veggieramen" unchecked>Veggie Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -364,7 +343,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <h4><input type="checkbox" id="garlicramen" name="garlicramen" unchecked>Garlic Ramen</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -372,22 +351,16 @@
                   $9.95
                 </p>
               </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Breakfast Menu Content -->
-
-          <div class="tab-pane fade" id="menu-lunch">
+            </div><!--End Ramen Menu Content-->
 
             <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Lunch</h3>
-            </div>
+              <h3>Drinks</h3>
+            </div><!-- Menu Item -->
 
             <div class="row gy-5">
-
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <h4><input type="checkbox" id="coke" name="coke" unchecked>Coke</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -398,7 +371,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <h4><input type="checkbox" id="dietcoke" name="dietcoke" unchecked>Diet Coke</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -409,7 +382,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <h4><input type="checkbox" id="lemonade" name="lemonade" unchecked>Lemonade</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -420,7 +393,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="sprite" name="sprite" unchecked>Sprite</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -431,7 +404,7 @@
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <h4><input type="checkbox" id="perrier" name="perrier" unchecked>Perrier</h4>
                 <p class="ingredients">
                   Lorem, deren, trataro, filede, nerada
                 </p>
@@ -439,102 +412,9 @@
                   $12.95
                 </p>
               </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
             </div>
-          </div><!-- End Lunch Menu Content -->
-
-          <div class="tab-pane fade" id="menu-dinner">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Dinner</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Dinner Menu Content -->
-
-        </div>
-
-      </div>
+          </div>
+        </div><!-- End Menu Content -->
     </section><!-- End Menu Section -->
 
     <!-- ======= Book A Table Section ======= -->
@@ -778,8 +658,6 @@
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
