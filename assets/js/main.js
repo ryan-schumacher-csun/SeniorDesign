@@ -5,6 +5,18 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+function getCheckboxes(){
+var checkboxes = document.querySelectorAll('input[name="food"]');
+var values = [];
+for (var i = 0; i < checkboxes.length; i++) {
+  if (checkboxes[i].checked == true) {
+    values.push(checkboxes[i].value);
+  }
+}
+alert(values); 
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -27,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
     });
   }
+
 
   /**
    * Navbar links active state on scroll
