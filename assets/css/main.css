@@ -1440,6 +1440,11 @@ section {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer .privacy {
+  text-align: center;
+  padding-top: 30px;
+}
+
 .footer .credits {
   padding-top: 4px;
   text-align: center;
@@ -1448,4 +1453,12 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Privay Policy
+--------------------------------------------------------------*/
+
+.body .privacy-policy-text {
+  margin: 50px;
 }
