@@ -13,11 +13,11 @@
 
 p,
 label {
-    font: 1rem 'Fira Sans', sans-serif;
+  font: 1rem 'Fira Sans', sans-serif;
 }
 
 input {
-    margin: .4rem;
+  margin: .4rem;
 }
 
 :root {
@@ -309,7 +309,7 @@ section {
   color: var(--color-primary);
 }
 
-.header #submit{
+.header #submit {
   font-size: 14px;
   color: #fff;
   background: var(--color-primary);
@@ -321,7 +321,7 @@ section {
 }
 
 .header #submit:hover,
-.header #submit:focus:hover{
+.header #submit:focus:hover {
   color: #fff;
   background: rgba(206, 18, 18, 0.8);
 }
@@ -335,7 +335,7 @@ section {
   margin-left: 30px;
   border-radius: 50px;
   transition: 0.3s;
-  
+
 }
 
 .header .btn-book-a-table:hover,
@@ -1251,7 +1251,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact #submit{
+.contact #submit {
   font-size: 14px;
   color: #fff;
   background: var(--color-primary);
@@ -1263,7 +1263,7 @@ section {
 }
 
 .contact #submit:hover,
-.contact #submit:focus:hover{
+.contact #submit:focus:hover {
   color: #fff;
   background: rgba(206, 18, 18, 0.8);
 }
@@ -1456,9 +1456,35 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Privay Policy
+# Privacy Policy
 --------------------------------------------------------------*/
-
-.body .privacy-policy-text {
+.privacy-policy-text section {
   margin: 50px;
+}
+
+.ribbon-highlight {
+  position: relative;
+  margin: 0.3em;
+  color: white;
+}
+
+.ribbon-highlight:before {
+  content: "";
+  z-index: -5;
+  left: -0.5em;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: #ce1212;
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 109%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+
+}
+
+mark {
+  background-color: #decccc;
 }
