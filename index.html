@@ -45,11 +45,16 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#menu">Order</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
-      <button type="submit" id="submit" form="form-id" onclick="getCheckboxes()">Submit Order</button>
+      <style>
+        button a {
+          color: #fff;
+        }
+      </style>
+      <button type="submit" id="submit"> <a href="orderform.html">Order Now</a></button> 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -57,7 +62,6 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <script type="text/javascript" src="https://form.jotform.com/jsform/230458089397166"></script>
   
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
@@ -66,7 +70,7 @@
           <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
           <p data-aos="fade-up" data-aos-delay="100">Delicious ramen at a fantastic price that will make you say "yum".</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#menu" class="btn-book-a-table">Place your Order</a>
+            <a href="orderform.html" class="btn-book-a-table">Place your Order</a>
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
@@ -166,236 +170,234 @@
       </div>
     </section><!-- End Why Us Section -->
 
-    <!-- ======= Menu Section ======= --> 
-    <form id="form-id">
-    <section id="menu" class="menu">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Our Menu</h2>
-          <p>Check Our <span>Yummy Menu</span></p>
-        </div>
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-          <div class="tab-pane fade active show" id="menu-starters">
-            <div class="tab-header text-center">
-              <h3>Appetizers</h3>
-            </div><!-- Menu Item -->
-
-            <div class="row gy-5">
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/pork-fried-rice.png" class="glightbox"><img src="assets/img/menu/pork-fried-rice.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Pork Fried Rice</h4>
-                <p class="ingredients">
-                  Rice, eggs, veggies, premium chashu, topped with scallions and our homemade sauce. 
-                </p>
-                <p class="price">
-                  $10.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/veggie-fried-rice.png" class="glightbox"><img src="assets/img/menu/veggie-fried-rice.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Veggie Fried Rice</h4>
-                <p class="ingredients">
-                  Rice, eggs, veggies, topped with scallions and our homemade sauce. 
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-            
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/gyoza.png" class="glightbox"><img src="assets/img/menu/gyoza.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Gyoza</h4>
-                <p class="ingredients">
-                  Homemade gyoza pan fried with veggie and pork filling.
-                </p>
-                <p class="price">
-                  $10.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/dumpling.png" class="glightbox"><img src="assets/img/menu/dumpling.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Dumplings</h4>
-                <p class="ingredients">
-                  Steamed dumplings with vegetable filling.
-                </p>
-                <p class="price">
-                  $10.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/chashu.png" class="glightbox"><img src="assets/img/menu/chashu.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Sliced Chashu</h4>
-                <p class="ingredients">
-                  Slices of fresh chashu.
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/egg.png" class="glightbox"><img src="assets/img/menu/egg.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Side Egg</h4>
-                <p class="ingredients">
-                  A gooey filled inside that makes a good addition to any ramen bowl.
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/side-noodle.png" class="glightbox"><img src="assets/img/menu/side-noodle.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Side Noodles</h4>
-                <p class="ingredients">
-                  Thin noodles, made in house.
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
+        <!-- ======= Menu Section ======= --> 
+        <section id="menu" class="menu">
+          <div class="container" data-aos="fade-up">
+            <div class="section-header">
+              <h2>Our Menu</h2>
+              <p>Check Our <span>Yummy Menu</span></p>
             </div>
-          </div><!-- End Appetizer Menu Content -->
-
-            <div class="tab-header text-center">
-              <h3>Ramen</h3>
-            </div><!-- Menu Item -->
-            <div class="row gy-5">
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/tonkotsu.png" class="glightbox"><img src="assets/img/menu/tonkotsu.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Tonkotsu Ramen</h4>
-                <p class="ingredients">
-                  Slow cooked tonkotsu broth filled with homemade noodles, topped with pork and scallions.
-                </p>
-                <p class="price">
-                  $13.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/spicy-tonkotsu.png" class="glightbox"><img src="assets/img/menu/spicy-tonkotsu.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Spicy Tonkotsu Ramen</h4>
-                <p class="ingredients">
-                  Slow cooked tonkotsu broth filled with homemade noodles, special spice blend, topped with pork and scallions.
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/shoyu.png" class="glightbox"><img src="assets/img/menu/shoyu.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Shoyu Ramen</h4>
-                <p class="ingredients">
-                  Soy sauce based ramen, with delicate noodles, topped with pork, scallions, seaweed and umami flavors.
-                </p>
-                <p class="price">
-                  $13.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/spicy-shoyu.png" class="glightbox"><img src="assets/img/menu/spicy-shoyu.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Spicy Shoyu Ramen</h4>
-                <p class="ingredients">
-                  Soy sauce based ramen, with delicate noodles, our special spice blend, topped with pork, scallions, seaweed and umami flavors.
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/veggie-ramen.png" class="glightbox"><img src="assets/img/menu/veggie-ramen.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Veggie Ramen</h4>
-                <p class="ingredients">
-                  Vegetarian based broth with our thick noodles, topped with scallions, corn and the choice of tofu.
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/garlic-ramen.png" class="glightbox"><img src="assets/img/menu/garlic-ramen.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Garlic Ramen</h4>
-                <p class="ingredients">
-                  Slow cooked garlic infused broth with thin noodles, topped with pork, scallions, sliced garlic.
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-            </div><!--End Ramen Menu Content-->
-
-            <div class="tab-header text-center">
-              <h3>Drinks</h3>
-            </div><!-- Menu Item -->
-
-            <div class="row gy-5">
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/coke.png" class="glightbox"><img src="assets/img/menu/coke.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Coke</h4>
-                <p class="ingredients">
-                  Coca-Cola.
-                </p>
-                <p class="price">
-                  $4.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/diet-coke.png" class="glightbox"><img src="assets/img/menu/diet-coke.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Diet Coke</h4>
-                <p class="ingredients">
-                  Diet Coca-Cola.
-                </p>
-                <p class="price">
-                  $4.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/lemonade.png" class="glightbox"><img src="assets/img/menu/lemonade.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Lemonade</h4>
-                <p class="ingredients">
-                  Fresh squeezed lemonade.
-                </p>
-                <p class="price">
-                  $4.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/sprite.png" class="glightbox"><img src="assets/img/menu/sprite.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Sprite</h4>
-                <p class="ingredients">
-                  Delicious lemon and lime sprite.
-                </p>
-                <p class="price">
-                  $4.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/perrier.png" class="glightbox"><img src="assets/img/menu/perrier.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Perrier</h4>
-                <p class="ingredients">
-                  Sparkling water.
-                </p>
-                <p class="price">
-                  $4.95
-                </p>
-              </div><!-- Menu Item -->
-            </div>
-          </div>
-        </div><!-- End Menu Content -->
-    </section><!-- End Menu Section -->
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+              <div class="tab-pane fade active show" id="menu-appetizers">
+                <div class="tab-header text-center">
+                  <h3>Appetizers</h3>
+                </div><!-- Menu Item -->
+    
+                <div class="row gy-5">
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/pork-fried-rice.png" class="glightbox"><img src="assets/img/menu/pork-fried-rice.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Pork Fried Rice</h4>
+                    <p class="ingredients">
+                      Rice, eggs, veggies, premium chashu, topped with scallions and our homemade sauce. 
+                    </p>
+                    <p class="price">
+                      $10.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/veggie-fried-rice.png" class="glightbox"><img src="assets/img/menu/veggie-fried-rice.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Veggie Fried Rice</h4>
+                    <p class="ingredients">
+                      Rice, eggs, veggies, topped with scallions and our homemade sauce. 
+                    </p>
+                    <p class="price">
+                      $9.95
+                    </p>
+                  </div><!-- Menu Item -->
+                
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/gyoza.png" class="glightbox"><img src="assets/img/menu/gyoza.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Gyoza</h4>
+                    <p class="ingredients">
+                      Homemade gyoza pan fried with veggie and pork filling.
+                    </p>
+                    <p class="price">
+                      $10.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/dumpling.png" class="glightbox"><img src="assets/img/menu/dumpling.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Dumplings</h4>
+                    <p class="ingredients">
+                      Steamed dumplings with vegetable filling.
+                    </p>
+                    <p class="price">
+                      $10.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/chashu.png" class="glightbox"><img src="assets/img/menu/chashu.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Sliced Chashu</h4>
+                    <p class="ingredients">
+                      Slices of fresh chashu.
+                    </p>
+                    <p class="price">
+                      $9.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/egg.png" class="glightbox"><img src="assets/img/menu/egg.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Side Egg</h4>
+                    <p class="ingredients">
+                      A gooey filled inside that makes a good addition to any ramen bowl.
+                    </p>
+                    <p class="price">
+                      $5.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/side-noodle.png" class="glightbox"><img src="assets/img/menu/side-noodle.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Side Noodles</h4>
+                    <p class="ingredients">
+                      Thin noodles, made in house.
+                    </p>
+                    <p class="price">
+                      $9.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                </div>
+              </div><!-- End Appetizer Menu Content -->
+    
+                <div class="tab-header text-center">
+                  <h3>Ramen</h3>
+                </div><!-- Menu Item -->
+                <div class="row gy-5">
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/tonkotsu.png" class="glightbox"><img src="assets/img/menu/tonkotsu.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Tonkotsu Ramen</h4>
+                    <p class="ingredients">
+                      Slow cooked tonkotsu broth filled with homemade noodles, topped with pork and scallions.
+                    </p>
+                    <p class="price">
+                      $13.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/spicy-tonkotsu.png" class="glightbox"><img src="assets/img/menu/spicy-tonkotsu.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Spicy Tonkotsu Ramen</h4>
+                    <p class="ingredients">
+                      Slow cooked tonkotsu broth filled with homemade noodles, special spice blend, topped with pork and scallions.
+                    </p>
+                    <p class="price">
+                      $14.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/shoyu.png" class="glightbox"><img src="assets/img/menu/shoyu.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Shoyu Ramen</h4>
+                    <p class="ingredients">
+                      Soy sauce based ramen, with delicate noodles, topped with pork, scallions, seaweed and umami flavors.
+                    </p>
+                    <p class="price">
+                      $13.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/spicy-shoyu.png" class="glightbox"><img src="assets/img/menu/spicy-shoyu.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Spicy Shoyu Ramen</h4>
+                    <p class="ingredients">
+                      Soy sauce based ramen, with delicate noodles, our special spice blend, topped with pork, scallions, seaweed and umami flavors.
+                    </p>
+                    <p class="price">
+                      $14.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/veggie-ramen.png" class="glightbox"><img src="assets/img/menu/veggie-ramen.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Veggie Ramen</h4>
+                    <p class="ingredients">
+                      Vegetarian based broth with our thick noodles, topped with scallions, corn and the choice of tofu.
+                    </p>
+                    <p class="price">
+                      $12.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/garlic-ramen.png" class="glightbox"><img src="assets/img/menu/garlic-ramen.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Garlic Ramen</h4>
+                    <p class="ingredients">
+                      Slow cooked garlic infused broth with thin noodles, topped with pork, scallions, sliced garlic.
+                    </p>
+                    <p class="price">
+                      $12.95
+                    </p>
+                  </div><!-- Menu Item -->
+                </div><!--End Ramen Menu Content-->
+    
+                <div class="tab-header text-center">
+                  <h3>Drinks</h3>
+                </div><!-- Menu Item -->
+    
+                <div class="row gy-5">
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/coke.png" class="glightbox"><img src="assets/img/menu/coke.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Coke</h4>
+                    <p class="ingredients">
+                      Coca-Cola.
+                    </p>
+                    <p class="price">
+                      $4.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/diet-coke.png" class="glightbox"><img src="assets/img/menu/diet-coke.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Diet Coke</h4>
+                    <p class="ingredients">
+                      Diet Coca-Cola.
+                    </p>
+                    <p class="price">
+                      $4.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/lemonade.png" class="glightbox"><img src="assets/img/menu/lemonade.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Lemonade</h4>
+                    <p class="ingredients">
+                      Fresh squeezed lemonade.
+                    </p>
+                    <p class="price">
+                      $4.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/sprite.png" class="glightbox"><img src="assets/img/menu/sprite.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Sprite</h4>
+                    <p class="ingredients">
+                      Delicious lemon and lime sprite.
+                    </p>
+                    <p class="price">
+                      $4.95
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item">
+                    <a href="assets/img/menu/perrier.png" class="glightbox"><img src="assets/img/menu/perrier.png" class="menu-img img-fluid" alt=""></a>
+                    <h4>Perrier</h4>
+                    <p class="ingredients">
+                      Sparkling water.
+                    </p>
+                    <p class="price">
+                      $4.95
+                    </p>
+                  </div><!-- Menu Item -->
+                </div>
+              </div>
+            </div><!-- End Menu Content -->
+        </section><!-- End Menu Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg">
@@ -420,7 +422,69 @@
       </div>
     </section><!-- End Gallery Section -->
 
-   
+       <!-- ======= Contact Section ======= -->
+       <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Contact</h2>
+            <p>Want to connect? <span>Contact Us</span></p>
+          </div>
+  
+          <div class="row gy-4">
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-map flex-shrink-0"></i>
+                <div>
+                  <h3>Our Address</h3>
+                  <p>1820 Earl Street, Santa Monica, CA 522830</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center">
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>ramyumramen@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>(321) 555 0123</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+  
+            <div class="col-md-6">
+              <div class="info-item  d-flex align-items-center">
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>Opening Hours</h3>
+                  <div><strong>Monday: </strong> 11AM - 5PM;
+                    <strong>Tues-Sat:</strong> 11AM - 12AM;
+                    <strong>Sunday:</strong> Closed
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+            <style>
+              button a {
+                color: #fff;
+              }
+            </style>
+            <div class="text-center"><button type="submit" id="submit"> <a href="contact.html">Contact Us</a></button></div>
+          <!--End Contact Form -->
+  
+        </div>
+      </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
