@@ -326,22 +326,22 @@ section {
   background: rgba(206, 18, 18, 0.8);
 }
 
-.header .btn-book-a-table {
-  font-weight: 500;
+.header .btn-book-a-table,
+.header .btn-book-a-table:focus {
   font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: 0.5s;
   color: #fff;
   background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+
 }
 
-.header .btn-book-a-table:hover {
+.header .btn-book-a-table:hover,
+.header .btn-book-a-table:focus:hover {
+  color: #fff;
   background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
 }
 
 section {
@@ -774,16 +774,12 @@ section {
   padding: 30px;
   background: var(--color-primary);
   color: #fff;
-  transition: 0.3s;
 }
 
 .why-us .why-box h3 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
-  position: relative; /* required for z-index to work */
-  z-index: 2;
-  
 }
 
 .why-us .why-box p {
@@ -795,8 +791,7 @@ section {
   background: rgba(255, 255, 255, 0.3);
   padding: 6px 30px 8px 30px;
   color: #fff;
-  border-radius: 30px;
-  border: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
   transition: all ease-in-out 0.4s;
 }
 
@@ -836,13 +831,8 @@ section {
 .why-us .icon-box h4 {
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 10px 0;
+  margin: 0 0 30px 0;
   font-family: var(--font-secondary);
-  position: relative; /* required for z-index to work */
-  z-index: 1; /* lower value to ensure the h4 elements are displayed below the h3 */
-  border-bottom: 3px dashed #fc0505; /* add a dashed border on the bottom */
-  width: 100%; /* set the width to 100% to make the border go across */
-  padding-bottom: 10px; /* add 10 pixels of padding to the bottom */
 }
 
 .why-us .icon-box p {
@@ -850,13 +840,9 @@ section {
   color: #6c757d;
 }
 
-
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
     transform: scale(1.1);
-  }
-  .why-us .why-box:hover  {
-    transform: scale(1.05);
   }
 }
 
@@ -1128,17 +1114,6 @@ section {
   text-align: center;
 }
 
-.gallery .swiper-slide {
-  width: 100%;
-  height: 250px; /* set a fixed height */
-}
-
-.gallery img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover; /* to make sure the entire image is displayed */
-}
-
 @media (min-width: 992px) {
   .gallery .swiper-wrapper {
     padding: 40px 0;
@@ -1150,11 +1125,6 @@ section {
     background: #fff;
     z-index: 1;
     transform: scale(1.2);
-  }
-  
-  .gallery .swiper-slide {
-    width: 300px; /* adjust as needed */
-    height: 187.5px; /* set a 2:1 aspect ratio */
   }
 }
 
@@ -1282,43 +1252,20 @@ section {
 }
 
 .contact #submit {
-  font-weight: 500;
   font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: rgba(206, 18, 18, 0.8);
-  transition: 0.5s;
   color: #fff;
   background: var(--color-primary);
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: rgba(206, 18, 18, 0.8);
 }
 
 .contact #submit:hover,
 .contact #submit:focus:hover {
-  background: rgba(206, 18, 18, 0.8);
   color: #fff;
-}
-
-.contact .btn-book-a-table {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 36px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #fff;
-  background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
-}
-
-.contact .btn-book-a-table:hover {
   background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
 }
-
-
 
 @keyframes animate-loading {
   0% {
