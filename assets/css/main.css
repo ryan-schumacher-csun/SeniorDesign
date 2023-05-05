@@ -780,6 +780,9 @@ section {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
+  position: relative; /* required for z-index to work */
+  z-index: 2;
+  
 }
 
 .why-us .why-box p {
@@ -831,14 +834,20 @@ section {
 .why-us .icon-box h4 {
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
   font-family: var(--font-secondary);
+  position: relative; /* required for z-index to work */
+  z-index: 1; /* lower value to ensure the h4 elements are displayed below the h3 */
+  border-bottom: 3px dashed #fc0505; /* add a dashed border on the bottom */
+  width: 100%; /* set the width to 100% to make the border go across */
+  padding-bottom: 10px; /* add 10 pixels of padding to the bottom */
 }
 
 .why-us .icon-box p {
   font-size: 15px;
   color: #6c757d;
 }
+
 
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
@@ -1114,6 +1123,17 @@ section {
   text-align: center;
 }
 
+.gallery .swiper-slide {
+  width: 100%;
+  height: 250px; /* set a fixed height */
+}
+
+.gallery img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover; /* to make sure the entire image is displayed */
+}
+
 @media (min-width: 992px) {
   .gallery .swiper-wrapper {
     padding: 40px 0;
@@ -1125,6 +1145,11 @@ section {
     background: #fff;
     z-index: 1;
     transform: scale(1.2);
+  }
+  
+  .gallery .swiper-slide {
+    width: 300px; /* adjust as needed */
+    height: 187.5px; /* set a 2:1 aspect ratio */
   }
 }
 
